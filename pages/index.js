@@ -111,6 +111,9 @@ export default function Home() {
       <Head>
         <title>QR CODE</title>
         <link rel='icon' href='/favicon.ico' />
+        <meta
+          name='viewport'
+          content='width=device-width, initial-scale=1, maximum-scale=1'></meta>
       </Head>
 
       <Container>
@@ -186,11 +189,25 @@ export default function Home() {
             />
 
             {value ? (
-              <div>
+              <div
+                style={{
+                  background: "white",
+                  width: "280px",
+                  height: "300px",
+                  display: "flex",
+                  padding: "20px",
+                  justifyContent: "center",
+                  borderRadius: "10px",
+                  alignItems: "center",
+                }}>
                 <QRCode
-                  size={1000}
-                  style={{ height: "200px", width: "300px" }}
+                  style={{
+                    height: "200px",
+                    width: "200px",
+                  }}
                   value={`https://dpworld.vercel.app/direct/${value}/${standId}`}
+                  fgColor='black'
+                  bgColor='white'
                 />
               </div>
             ) : null}
