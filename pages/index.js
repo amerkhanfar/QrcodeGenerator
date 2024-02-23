@@ -205,7 +205,7 @@ export default function Home() {
                     height: "200px",
                     width: "200px",
                   }}
-                  value={`https://dpworld.vercel.app/direct/${value}/${standId}`}
+                  value={`https://dpworld.vercel.app/ddpworldpoints/${value}/${standId}`}
                   fgColor='black'
                   bgColor='white'
                 />
